@@ -24,6 +24,9 @@ from profanity_filter.types_ import (Words, Language, ProfaneWordDictionaries, P
                                      Languages, LanguagesAcceptable, Nlps, Morphs, Spells, Substrings,
                                      TextSplittedByLanguage, ProfanityFilterError, Word, AnalysisType, AnalysesTypes)
 
+import Levenshtein
+import re as regex
+
 
 class DummyHunSpell:
     def __init__(self, *args):
